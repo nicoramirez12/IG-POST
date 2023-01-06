@@ -1,128 +1,137 @@
-.post{
-    width: 100%;
-    height: auto;
-    background: #fff;
-    border: 1px solid #dfdfdf;
-    margin-top: 40px;
-}
-
-.info{
-    width: 100%;
-    height: 60px;
+article {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  article + article {
+      margin-top: 1rem;
+  }
+  article header {
+    z-index: 20;
+    background: #ffffff;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.info .username{
-    width: auto;
-    font-weight: bold;
-    color: #000;
-    font-size: 14px;
-    margin-left: 10px;
-}
-
-.info .options{
-    height: 10px;
-    cursor: pointer;
-}
-
-.info .user{
-    display: flex;
-    align-items: center;
-}
-
-.info .profile-pic{
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    background: none;
-}
-
-.info .profile-pic img{
-    border: none;
-}
-
-.post-image{
     width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-.post-content{
-    width: 100%;
-    padding: 20px;
-}
-
-.likes{
-    font-weight: bold;
-}
-
-.description{
-    margin: 10px 0;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.description span{
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.post-time{
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 12px;
-}
-
-.comment-wrapper{
-    width: 100%;
-    height: 50px;
-    border-radius: 1px solid #dfdfdf;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.comment-wrapper .icon{
-    height: 30px;
-}
-
-.comment-box{
-    width: 80%;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 14px;
-}
-
-.comment-btn,
-.action-btn{
-    width: 70px;
-    height: 100%;
-    background: none;
-    border: none;
-    outline: none;
-    text-transform: capitalize;
-    font-size: 16px;
-    color: rgb(0, 162, 255);
-    opacity: 0.5;
-}
-
-.reaction-wrapper{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    margin-top: -20px;
-    align-items: center;
-}
-
-.reaction-wrapper .icon{
-    height: 25px;
+    padding: 1rem;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  article header h2 {
     margin: 0;
-    margin-right: 20px;
-}
-
-.reaction-wrapper .icon.save{
+    margin-left: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #262626;
+  }
+  
+  article header h2 a {
+    text-decoration: none;
+    color: #262626;
+  }
+  
+  article header img {
+    display: block;
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+    border-radius: 100%;
+    border: 1px solid #262626;
+  }
+  
+article section {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  
+  article section .img-wrapper {
+    padding-top: 100%;
+    position: relative;
+  }
+  
+  article section img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  article footer strong {
+    font-weight: 600;
+  }
+  
+  article footer svg {
+    display: block;
+  }
+  
+  article footer > * + * {
+    margin-top: 1rem;
+  }
+  
+  article footer > .actions,
+  article footer > .data > *,
+  article footer > .comment {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  article footer > .data > * + * {
+    margin-top: .5rem;
+  }
+  
+  article footer .actions {
+    padding-top: 1rem;
+    display: flex;
+  }
+  
+  article footer .actions > * + * {
+    margin-left: .5rem;
+  }
+  
+  article footer .actions > *:last-child {
     margin-left: auto;
-}
+    margin-right: 0;
+  }
+  
+  article footer time {
+    display: block;
+    opacity: .6;
+    font-size: .7rem;
+    text-transform: uppercase;
+  }
+  
+  article footer .comment {
+    display: grid;
+    grid-template-columns: auto 1fr 50px;
+    align-items: center;
+    gap: .15rem;
+    margin-top: 1rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    border-top: 1px solid #dbdbdb;
+  }
+  
+  article footer .comment input,
+  article footer .comment button {
+    line-height: 1;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    border: 0;
+  }
+  
+  article footer .comment button {
+    color: #0095f6;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  article footer .comment input::placeholder {
+    color: #262626ee;
+  }
+  
